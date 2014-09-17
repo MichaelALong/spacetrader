@@ -27,6 +27,9 @@ public class ConfigController implements Initializable {
     
     @FXML
     private void handleOKAction(ActionEvent event) {
+    	Universe uni = Universe.generateUniverse(100, 100, 40);
+    	System.out.println(uni.toString());
+    	
         application.closeConfig();
     }
     
